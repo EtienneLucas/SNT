@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        <title>Un cours de SNT random</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="Dream Eaters.png" />
+    </head>
+    <body>
+    <h1> <strong> Bienvenue sur ce cours de SNT, mes amis.</strong> </h1>
+    <p> <strong> Je vais me faire un plaisir de vous faire découvrir cette matière passionnante :) </strong> </p>
+    <p>
+    <img src="SNT.jpg">
+    </p>
+    <br />
+    <br />
+    <p> La SNT (Sciences Numériques et Technologiques) est une matière qui ne se présente aux élèves qu'en classe de Seconde. Elle englobe plusieurs chapitres à propos de programmation (Python...) ainsi que certains thèmes concernant des objets et systèmes informatiques du quotidien, tels que les réseaux sociaux ou le web.
+    Cependant, j'ai pleinement conscience qu'apprendre une toute nouvelle matière peut s'avérer très difficile, ce pourquoi j'ai développé ce site pour vous expliquer au mieux chacun des différents thèmes abordés en cours de SNT. </p>
+    <br />
+    <br />
+    <br />
+        <br />
+        <h2> NAVIGATION RAPIDE </h2>
+        <p>
+        <a href="#programmationpython">Programmation Python</a> <br />
+        <a href="#donneesstructurees">Données Structurées</a> <br />
+        <a href="#lesreseauxsociaux">Les Réseaux Sociaux</a> <br />
+        <a href="#informatiqueembarquee">Informatique Embarquée & Objets Connectés</a> <br />
+        <a href="#photonumerique">Photographie Numérique</a> <br />
+        <a href="#localisationcartographie">Localisation & Cartographie</a> <br />
+        <a href="#internetweb">Internet & Web</a> <br />
+        </p>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <h3 id="programmationpython"> </h3>
+        <h3> <strong><em><ins> Programmation Python</strong></em><ins></h3>
+        <br />
+        <br />
+        <img src="hqdefault (1).jpg" width=200px>
+        <br />
+        <br />
+        <p3> <strong> I. Affectation de variables </strong> </p3>
+        <br />
+        <br />
+        <p2>
+        Lorsqu'on veut stocker des valeurs (pour les réutiliser ensuite par exemple), il est important de les <em> affecter à des variables </em>. Ces variables peuvent être nommées comme vous le voulez, et permettent de réutiliser des valeurs au fur-et-à-mesure du programme. <br />
+        Par exemple: <br />
+        <img src="Capture d'écran 2025-04-20 123246.png"> <br />
+        Ici, a, b et calcul sont des variables: elles servent à stocker respectivement les valeurs 5, 9 et la somme des variables a et b, contenant elles-mêmes les valeurs 5 et 9. <br />
+        Il est important de savoir qu'une variable prendra toujours la <strong>dernière valeur</strong> qui lui a éte affectée. <br />
+        <img src="Capture d'écran 2025-04-20 153053.png"> <br />
+        Ici, n1 subit une modification: on lui a ajouté 1, donc dorénavant, la valeur affectée à n1 sera 2.
+        <br />
+        <br />
+        <br />
+        <br />
+        </p2>
+        <p3> <strong> II. Types de variables </strong> </p3>
+        <br />
+        <br />
+        <p2>
+        Il esiste plusieurs types de variables en langage Python. Elles seront notamment utiles lorsqu'un utilisateur affectera lui-même des valeurs à des variables.
+        Parmi elles, on retrouve: <br />
+        -<em> int </em>: lorsqu'il s'agit d'un nombre entier relatif. <br />
+        -<em> float </em>: lorsqu'il s'agit d'un nombre décimal (à virgule) relatif. Les virgules sont remplacées par un point pour éviter les confusions. <br />
+        -<em> string </em> (abrégé <em> str </em>): lorsque la variable contient une chaîne de caractères (quand d'autres caractères que des nombres entrent en jeu). <br />
+        -<em> list </em>: lorsqu'il s'agit d'une liste de nombres les uns à la suite des autres, séparés par des virgules et entre crochets. Exemple: [1, 2, 3]. <br />
+        -<em> booléens </em> (abrégé <em> bool </em>): il n'en existe que deux de ce type, True (vrai) et False (faux). Ceux-ci permettent de vérifier des conditions selon qu'elles soient vraies ou fausses. ATTENTION: l'orthographe et les majuscules doivent être respectées.
+        <br />
+        <br />
+        <br />
+        <br />
+        </p2>
+        <p3><strong> III. Entrées et sorties </strong></p3>
+        <br />
+        <br />
+        <br />
+        <p2>
+        <strong> 1. Entrées </strong>
+        <br />
+        <br />
+        Lorsque l'utilisateur doit affecter lui-même des valeurs à des variables, on utilise la fonction <em>input</em>. Celle-ci demande à l'utilisateur de rentrer une valeur, de sorte que le programme continue ensuite de s'exécuter en tenant compte des nouvelles valeurs. Cependant, il faudra adapter le programme en fonction du type de valeurs que l'utilisateur est censé rentrer grâce aux types de variables. <br />
+        Par exemple, si l'utilisateur doit rentrer un nombre entier, il faudra écrire dans le programme: variable=int(input()). <br />
+        <ins>Remarque</ins>: il est possible de donner une instruction à l'utiliasteur en l'écrivant entre guillements entre les parenthèses. <br />
+        Par exemple: <br />
+        <img src="Capture d'écran 2025-04-22 184634.png"> <br />
+        Le message suivant apparaîtra donc à l'écran: <br />
+        <img src="Capture d'écran 2025-04-22 184652.png" width=400px> <br/>
+        <br />
+        <br />
+        <br />
+        <strong> 2. Sorties </strong>
+        <br />
+        <br />
+        Lorsque vous désirez que le programme affiche quelque chose à l'écran, il faudra utiliser la fonction <em>print</em>. Ce que cette fonction affichera se trouvera dans la console, c'est-à-dire dans un cadre en dehors du programme. Pour cela, il faudra placer des parenthèses juste après la fonction <em>print</em>, dans lesquelles il faudra écrire entre guillemets ce que vous voulez. Par exemple:<br />
+        print("Tout est super génial") affichera dans la console "Tout est super génial!". <br />
+        ATTENTION: si vous ne mettez pas de guillemets, le programme considèrera votre message comme une variable, et celle-ci n'aura aucun sens (message d'erreur) si elle n'a pas été définie auparavant. Exemple:<br />
+        <img src="Capture d'écran 2025-04-20 125545.png"<br />
+        <br />
+        Le programme affichera donc 14 dans la console, puisqu'il aura additionné les valeurs correspondant à n1 et n2. Il est également possible de combiner les deux, à condition de vérifier que le texte entre guillemets et les variables soient bien séparés par des parenthèses. Exemple: <br />
+        <img src="Capture d'écran 2025-04-20 125703.png"> <br />
+        Le programme affichera donc dans la console "La somme de 5 et de 9 est 14".
+        <br />
+        <br />
+        <br />
+        <br />
+        </p2>
+        <p3> <strong>IV. Les différentes opérations</strong> </p3>
+        <br />
+        <br />
+        <p2>
+        En python, certaines opérations ne s'écrivent pas de la même façon. Les additions et les soustractions s'écrivent toujours avec les signes "+" et"-", mais ce sera différent pour les autres:<br />
+        -La multiplication est symbolisée par un "*" <br />
+        -La division par un "/" <br />
+        -La puissance par "**" <br />
+        -La division entière (euclydienne) par "//" <br />
+        -Le reste de la division euclydienne par "%" <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        </p2>
+        <p3> <strong>V. Instructions conditionnelles</strong> </p3>
+        <br />
+        <br />
+        <be />
+        <br />
+        <p2>
+        <strong>1. Fonctions if/elif/else</strong>
+        <br />
+        <br />
+        Lorsqu'on veut valider une condition pour que le programme continue, on utilise trois fonctions: <br />
+        -<em>if</em>(=si...): pour imposer une condition. <br />
+        -<em>elif</em>(=else if): pour imposer unc autre condition si la première n'est pas validée.<br />
+        -<em>else</em>(=sinon): si la condition n'est validée par aucune des fonctions précédentes.<br />
+        Il est important de ne pas oublier le ":" après une ligne d'instruction conditionnelle et de mettre une tabulation au début de chaque ligne dépendante de cette condition.<br />
+        Par exemple: <br />
+        <img src="Capture d'écran 2025-04-20 125900.png"> <br />
+        Ici, puisque n1 et n2 sont égaux, l'un n'est pas supérieur à l'autre: les deux premières conditions ne sont pas validées, c'est donc le <em>else</em> qui est appliqué.
+        <br />
+        <br />
+        <br />
+        <strong>2. Opérateurs and/or</strong>
+        <br />
+        <br />
+        Lorsqu'on veut vérifier deux conditions à la fois, on les met côte-à-côte avec l'opérateur <em>and</em> (="et") entre les deux. <br />
+        <img src="Capture d'écran 2025-04-20 161716.png"> <br />
+        Ici, pour afficher n1, il faut qu'il soit supérieur à 4 <strong>et</strong> inférieur à 11. <br />
+        Si l'on impose deux conditions mais qu'il n'est nécessaire de valider qu'une des deux, on place l'opérateur <em>or</em> (="ou") entre les deux. <br />
+        <img src="Capture d'écran 2025-04-21 133813.png" <br />
+        <br />
+        Ici, il faut que 5 soit supérieur à 3 <strong>ou</strong> l'inverse pour que le programme affiche "5 et 3 sont différents".
+        <br />
+        <br />
+        <br />
+        <br />
+        </p2>
+        <p3> <strong>VI. Fonction <em>range()</em></strong> </p3>
+        <br />
+        <br />
+        <br />
+        <p2>
+        <strong>1. Liste dans l'ordre croîssant</strong>
+        <br />
+        <br />
+        Pour afficher une lise de nombres dans l'ordre croîssant, on peut utiliser la fonction <em>range</em>. On peut trouver, dans les parenthèses qui la suivent, jusqu'à trois nombres, séparés par des virgules. S'il n'y a qu'un seul nombre, elle affiche tous les nombres de 0 jusqu'au nombre rentré dans les parenthèses. S'il y en a deux, elle affiche tous les nombres entre les deux. S'il y en a trois, on suppose range(a, b, n), il affichera tous les nombres entre a et b par sauts de n. Par exemple: <br />
+        <img src="Capture d'écran 2025-04-20 134846.png"> <br />
+        Ici, le programme affichera les nombres entre 1 et 7 tous les 2 nombres, donc 1, 3, 5. A noter qu'il n'affiche le point d'arrivée (ici, 7), il est non-inclus. <br />
+        <ins>Remarque:</ins> si vous utilisez directement la fonction <em>print</em>, il faudra mettre un "*" devant le <em>range</em>.
+        <br />
+        <br />
+        <br />
+        <strong>2. Instructions répétitives: Boucle bornée</strong>
+        <br />
+        <br />
+        Si l'on veut afficher une même chose un certain nombre de fois, la fonction <em>range</em> peut être utilisée différemment: en rajoutant <em>"for loop in"</em> devant le <em>range():</em>, le programme répétera l'instruction qui suit un certain nombre de fois. Ce nombre de répétitions sera défini par le nombre entre parenthèses. Par exemple: <br />
+        <img src="Capture d'écran 2025-04-20 151022.png"> <br />
+        Ce programme affichera donc 8 fois le nombre 5 car l'instruction <em>"print(5)"</em> sera répétée 8 fois.
+        <br />
+        <br />
+        <br />
+        <strong>3. Instructions répétitives: Boucle non bornée</strong>
+        <br />
+        <br />
+        Lorsqu'on veut répéter des instructions un nombre de fois indéfini à l'avance, on utilise la fonction <em>while</em> (="tant que"). Cette fonction permet de continuer à répéter une instruction tant qu'une condition qui lui est liée n'est pas validée. Cette condition à valider se trouve juste derrière le <em>while</em> sans virgule ou autre séparation.
+        Par exemple: <br />
+        <img src="Capture d'écran 2025-04-20 153014.png"> <br />
+        Ici, tant que n2 est inférieur à n1, on affiche la valeur de n2 avant de lui ajouter 1. Il affichera donc 1, puis 2, puis 3... Jusqu'à 9, puisque le programme s'arrête une fois avoir atteint la valeur de n1 (10), ce qui se fait après le dernier <em>print</em>. <br />
+        On peut également utiliser les variables <em>bool</em>(True/False). Celles-ci permettront de répéter une instruction selon que la condition soit vraie ou fausse. Par exemple: <br />
+        <img src="Capture d'écran 2025-04-20 154803.png"> <br />
+        Ici, on part du principe que le programme continue en boucle, et que tant qu'il continue, il demande à l'utilisateur de rentrer un nombre. Si ce nombre est égal à 123456789, le programme prend fin et affiche "BIENVENUE". Mais s'il entre n'importe quel autre nombre, le programme affiche "CODE INCORRECT" et la boucle continue, jusqu'à ce qu'il entre le bon code. Un peu comme un cadenas ou un code d'appartement ;) . A noter que le "print("BIENVENUE")" ne s'applique que lorsque l'étape de la validation de la condition est franchise.
+        <br />
+        <br />
+        <br />
+        <br />
+        </p2>
+        <p3> <strong>VII. Fonctions Python</strong> </p3>
+        <br />
+        <br />
+        <p2>
+        Les fonctions Python sont comme en Mathématiques: elles sont comparables à une machine dans laquelle on fait entrer une banane pour qu'elle en fasse ressortir de la compote de banane. <br />
+        En Python, il faut commencer par <strong>définir</strong> la fonction pour déterminer ce qu'elle doit faire. Pour cela, il suffit d'écrire sur son programme "def (nom de la fonction)". Ensuite, tout dépend de ce que vous voulez en faire. Si vous voulez afficher tous les nombres entre deux paramètres d'entrée (deux nombres), voici ce que vous pouvez faire: <br />
+        <img src="Capture d'écran 2025-04-20 162733.png"<br /> <br />
+        ATTENTION: pour l'instant, cette fonction n'affichera rien, n1 et n2 n'ont pas encore été définis. Pour appliquer la fonction, il suffira de <strong>l'appeler</strong> pour qu'elle affiche les nombres: <br />
+        <img src="Capture d'écran 2025-04-20 163100.png"> <br />
+        Maintenant, la fonction s'appliquera aux nombres 1 et 9 et affichera donc tous les nombres entre ces deux paramètres d'entrée.
+        <br />
+        <br />
+        Pour plus d'informations et des entraînements: <a href="https://www.france-ioi.org/algo/chapters.php">France.IOI</a>
+        <br />
+        <br />
+        <br />
+        <br />
+        <h4 id="donneesstructurees"></h4>
+        <h4> <strong><em><ins>Données Structurées</strong></em></ins> </h4>
+        <img src="AweRobotics.com-Emotional-Intelligence-in-Robots-Role-of-Machine-Learning-and-Natural-Language-Processing-in-Developing-Emotional-Intelligence-in-Robots-1024x574.png" width=350px>
+        <br />
+        <br />
+        </p2>
+        <p3><strong>I. Ce qu'il faut savoir sur les données</strong></p3>
+        <br />
+        <br />
+        <br />
+        <p2>
+        <strong>1. Les types de données</strong>
+        <br />
+        <br />
+        Une donnée est une information traitée par un ordinateur, se rapprochant à un objet, une personne ou un évènement. <br />
+        Une donnée personnelle est quant à elle une donnée identifiant directement (par le nom, une photo...) ou indirectement (par l'emprteinte digitale, l'ADN, la géolocalisation...) une personne physique. <br />
+        Une métadonnée est une donnée particulière apportant des informations sur la donnée principale. <br />
+        <br />
+        Il existe deux grands types de donnés: <br/>
+        -Les données non structurées: elles n'ont pas d'organisation prédéfinie, et peuvent être traitées et interprétées par un humain. Le texte brut, les images ou les vidéos sont des données non structurées. <br />
+        -Les données structurées: ce sont des données organisées dans un modèle prédéfini, facilitant la manipulation et l'analyse.
+        <br />
+        <br />
+        <br />
+        <strong>2. Outils de structuration de données</strong>
+        <br />
+        <br />
+    
+        Pour structurer les données, on peut utiliser plusieurs outils: <br/>
+        <br/>
+        -Des bases de données <abrr title="Système de Gestion de Base de Données Relationnelles">SGBDR</abrr>: ce sont tables avec des lignes, colonnes et des liens entre elles.
+        <blockquote>Par exemple: MySQL, SQLite, Oracle, Access...</blockquote> <br/>
+        -Des tableaux: ils structurent les données en lignes et colonnes, utilisés pour stocker des informations.
+        <blockquote>Par exemple: Microsoft Excel </blockquote><br/>
+        -Des fichiers au formats sécifiques.
+        <blockquote> Par exemple: format .CSV, format .XML, format .JSON</blockquote>
+        <br />
+        <br />
+        <br />
+        <br />
+        </p2>
+        <p3><strong>II. Les bases de données <abrr title="Système de Gestion de Base des Données Relationnelles">SGBDR</abrr></strong></p3>
+        <br/>
+        <br/>
+        <br/>
+        <p2>
+            <strong>1. Concepts de base</strong>
+            <br/>
+            <br/>
+            Comme expliqué précédemment, les bases de données <abrr title="Système de Gestion de Base de Données Relationnelles">SGBDR</abrr> sont des tables, servant de structures principales pour stocker des données. <br/>
+            Dedans, les colonnes définissent le type d'informations, tandis que les lignes représentent des enregistrements spécifiques.
+            <br/>
+            <br/>
+            <br/>
+            <strong>2. Langage <abrr title="Structured Query Language">SQL</abrr></strong>
+            <br/>
+            <br/>Le langage SQL est un langage utilisé pour interagir avec les bases de données relationnelles. Pour cela, on procède à des requêtes SQL (on "interroge" les données). <br/>
+            Il est possible de sélectionner, insérer, mettre à jour et supprimer des données grâce aux opérations SELECT, INSERT, UPDATE et DELETE. <br/>
+            <br/>
+            Et pour analyser ces données, on peut utiliser par exemple les opérations d'analyse WHERE, GROUP BY, HAVING qui servent respectivement à imposer une condition, regrouper des colonnes (somme, moyenne, produit... des valeurs dans les colonnes) ou filtrer les données. <br/>
+            <br/>
+            <img src="IMG_20250501_165927.jpg" width="300px">
+        </p2>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <h5 id="lesreseauxsociaux"> </h5>
+        <h5> <strong><em><ins>Les Réseaux Sociaux</strong></em></ins> </h5>
+        <img src="Reseaux-sociaux-1.jpg" width=350px>
+        <br />
+        <br />
+        <p3> <strong>I. Caractéristiques des réseaux sociaux</strong> </p3>
+        <br />
+        <br />
+        <br />
+        <p2>
+        <strong>1. Qu'est-ce qu'un réseau social?</strong>
+        <br />
+        <br />
+        Dans la vie quotidienne, un réseau social est un ensemble d'individus, appelé communauté, qui interagissent ensemble autour d'un centre d'intérêts commun. <br/>
+        Sur le web, c'est le même principe: la seule différence est qu'il s'agit d'une plateforme numérique reliant les internautes entre eux, toujours autour d'un même centre d'intérêts.
+        Inventés à la fin des années 1900 avec Sixdegrees (bien que le sujet du premier réseau social fasse encore débat), ils se sont développés de plus en plus rapidement au début des années 2000. <br /> <br />
+        Parmi eux on retrouve plusieurs types de réseaux sociaux: <br />
+        -Le partage de contenu (vidéos, photos...): YouTube, Instagram, Pinterest, Snapchat... <br />
+        -Messagerie: WhatsApp... <br />
+        -Conversation à distance: Skype... <br />
+        -Réseaux professionnels: LinkedIn... <br/>
+        <br />
+        <br />
+        <br />
+        <strong>2. Algorithmes de recommandation</strong>
+        <br />
+        <br />
+        Un algorithme de recommandation sert à établir le profil, les goûts et les préférences des utilisateurs afin d'améliorer leur expérience et d'attirer de plus en plus de monde. Pour cela, ils se servent de leur immense base de données leur permettant d'avoir toujours quelque chose à proposer selon nos goûts. <br /> Et pour créer cette même base de données, ils récoltent des informations (en se limitant quand même aux goûts hein ;) ) tout au long du parcours de l'utilisateur: lors de l'inscription, des recherches, des likes... Chaque action est enregistrée dans le but de proposer des contenus adaptés.
+        <br />
+        <br />
+        <br />
+        <br />
+        </p2>
+        <p3> <strong>II. Les sources de revenus des réseaux sociaux</strong> </p3>
+        <br />
+        <br />
+        <br />
+        <p2>
+        <strong>1. Publicités ciblées</strong>
+        <br />
+        <br />
+        La base de données des réseaux sociaux est également utilisée pour faire de la publicité ciblée: en la mettant au service d'annonceurs commerciaux, ceux-ci sont capables de proposer des publicités en fonction des goûts des utilisateurs, de sorte à susciter davantage leur attention. Ainsi, les réseaux sociaux sont payés par les annonceurs pour leur permettre de faire leurs publicités, servant elles-mêmes à inciter l'achat de leurs produits.
+        <br />
+        <br />
+        <br />
+        <strong>2. Les services avantageux</strong>
+        <br />
+        <br />
+        Afin de réaliser de plus gros bénéfices, les réseaux sociaux ont développé leurs propres services payants: ceux-ci ne sont pas obligatoires, mais ils offrent des privilèges aux utilisateurs qui les achètent: suppression des publicités, possibilités de personnalisation du profil... Il y a par exemple Snapchat+, Nitro, X Premium...
+        <br />
+        <br />
+        <img src="0_fUHqZMTdUxlltiSc.png" width=100px> <img src="discord-nitro.jpg" width=180px> <img src="x-premium-plus-test-1.jpg" width=180px>
+        <br />
+        <br />
+        <br />
+        </p2>
+        <p3> <strong>III. Graphes et "Petit Monde"</strong> </p3>
+        <br />
+        <br />
+        <br />
+        <p2>
+        <strong>1. Les graphes (réseaux sociaux)</strong>
+        <br />
+        <br />
+        Les scientifiques ont développé un système de graphes afin d'analyser les communautés qui se forment sur les réseaux sociaux, en représentant schématiquement les relations établies entre les internautes. Ceux-ci sont représentés par des "sommets" et leurs relations par des "arêtes", comme dans un polygone. Et pour étudier ces graphes, on utilise pluseurs paramètres: <br />
+        -Le centre: c'est le sommet qui a le plus de relations avec les autres internautes. <br/>
+        -Le rayon: c'est la distance la plus courte entre le centre et le sommet le plus éloigné. <br/>
+        -Le diamètre: c'est la distance la plus courte entre les deux sommets les plus éloignés. <br/>
+        <br/>
+        <img src="b55c99e1-aec9-4291-b496-07b08e25f85c.png" width="450px">
+        <br/>
+        <br/>
+        <br/>
+        <strong>2. Petit Monde et degrés de séparation</strong>
+        <br />
+        <br />
+        Afin de déterminer le nombre minimum de relations nécessaires pour relier deux individus quelconques dans le monde, le scientifique Stanley Milgram a inventé au XXème siècle le concept de "degrés de séparation".
+        <br/>
+        Par exemple, Jonathan a le numéro de Bertrand(1), le fils de Marcel(2) qui est le meilleur ami de Michel(3), le grand-père de Lucie(4), qui a le numéro de Maria (5), la petite fille de la reine Elizabeth II. Donc il y a en tout 5 personnes intermédiaires nécessaires pour relier Jonathan à Elizabeth II, donc le degré de séparation est de 5. <br />
+        <br />
+        Actuellement, le degré de séparation moyen est de 6 relations (d'où le nom de Sixdegrees), et baisse de plus en plus: puisque le développement des réseaux sociaux est de plus en plus rapide, on a besoin de moins en moins de relations intermédiaires pour relier deux individus. <br /> <br />
+        En conservant l'exemple de Jonathan et d'Elizabeth II, en supposant que Jonathan ait directement le numéro de Lucie, la chaîne se réduira à Jonathan => Lucie(1) => Maria(2) => Elizabeth II. Le degré de séparation sera alors de 2 relations. <br />
+        <ins>Remarque:</ins> Vous l'aurez probablement compris: si jamais tout le monde avait le numéro de tout le monde (bien que ce soit impossible), il n'y aurait plus besoin de personnes intermédiaires pour relier deux individus => le degré de séparation moyen sera alors de 0.
+        <br />
+        <br />
+        <br />
+        </p2>
+        <p3><strong>IV. Les dangers des réseaux sociaux</strong> </p3> <br /> <img src="164bb2b801233c958cd0630dbd4fcf40.png" width=100px>
+        <br />
+        <br />
+        <p2>
+        Bien évidemment, les réseaux sociaux ne seront jamais parfaits tant que les utilisateurs ne seront pas tous parfaits: il y a toujours des personnes malveillantes qui essayent de les utiliser pour commettre leurs méfaits. Parmi celles-ci, on retrouve par exemple: <br />
+        -Le cyberharcèlement (harcèlement via Internet); <br />
+        -L'usurpation d'identité; <br />
+        -Le phishing/hameçonnage (tromperie d'une personne d'une manière ou d'une autre dans le but de voler ses données personnelle); <br />
+        -La manipulation; <br />
+        -Des contenus violents; <br />
+        -Des incitations à la haine; <br />
+        -Piratage; <br />
+        -Diffusion de fausses informations <br />
+        En France, ces méfaits sont punis par la loi, et si jamais vous êtes victime de cyberharcèlement, vous pouvez vous rendre sur le site <a href="https://www.education.gouv.fr/non-au-harcelement">nonauharcelement.education.gouv.fr</a>, ou vous pouvez également appeler le 30 20.
+        </p2>
+        <br />
+        <br />
+        <br />
+        <br />
+        <h6 id="informatiqueembarquee"> </h6>
+        <h6> <strong><em><ins>Informatique Embarquée & Objets Connectés</ins></strong></em> </h6>
+        <img src="Bluetooth-Devices.jpg" width=250px>
+        <br />
+        <br />
+        <br />
+        <p3><strong>I. L'informatique embarquée</strong></p3>
+        <br />
+        <br />
+        <p2>On dit qu'un objet contient de l'informatique embarquée lorsqu'il contient des programmes informatiques dans son microprocesseur, servant à assurer le fonctionnement de l'appareil, en plus des composantes électroniques.
+        <br />
+        <br />
+        <br />
+        <strong>1. Capteurs et actionneurs</strong>
+        <br />
+        <br />
+        Pour bien fonctionner, il peut avoir besoin d'interagir avec l'extérieur: cela peut être fait grâce aux capteurs et aux actionneurs. <br />
+        Tandis que les capteurs mesurent des grandeurs physiques (température environnante, rythme cardiaque, luminosité...) pour acquérir des informations de l'extérieur et ensuite les convertir en signaux électriques numérisables, les actionneurs agissent directement sur celui-ci de différentes manières (mouvements, sons, en émettant de la lumière...).
+        <br />
+        <br />
+        <br />
+        <strong>2. Interface homme-machine</strong>
+        <br />
+        <br />
+        Lorsqu'un appareil a besoin qu'un utilisateur lui donne des instructions lui-même pour assurer son bon fonctionnement, il peut avoir recours à une interface homme-machine (IHM), constituée de capteurs et d'actionneurs. On y retrouve par exemple des claviers et souris d'ordinateur, des manettes de PS4 ou les écrans eux-mêmes.
+        <br />
+        <br />
+        <br />
+        </p2>
+        <p3><strong>II. Les objets connectés</strong></p3>
+        <br />
+        <br />
+        <br />
+        <p2>
+        <strong>1. L'Internet Of Things (IOT)</strong>
+        <br />
+        <br />
+        Un objet connecté est un appareil capable de communiquer avec d'autres appareils via Internet. <br />
+        L'ensemble de ces objets connectés est appelé l'Internet Of Things (=Internet des objets), et peut comporter des Smartphones, des montres connectées, des voitures, des électroménagers et tous les appareils Bluetooth.
+        <br />
+        <br/>
+        <img src="IoT_1.jpg" width=340px>
+        <br />
+        <br />
+        <strong>2. Les contraintes des objets connectés</strong>
+        <br />
+        <br />
+        En 2020, on compte 10 à 30 milliards d'objets connectés dans le monde, ce qui a provoqué la saturation des réseaux. Ce phénomène s'explique par la demande croîssante d'inovations techniques en termes de limitation de la consommation d'énergie, de puissance des batteries, de miniaturisation des composantes... <br />
+        <br />
+        Et concernant la sécurité, l'Internet Of Things pose également certains problèmes: leur connexion à Internet peut les rendre accessibles à distance par des personnes malveillantes. De plus, le détournement des objets connectés peut entraîner la fuite de données (y compris des données personnelles) et puisqu'ils sont dépendants d'Internet, il suffirait d'une faille dans le réseau, comme une panne, pour que tout l'IOT devienne vulnérable.
+        <br />
+        <br />
+        <br />
+        <br />
+        <h7 id="photonumerique"> </h7>
+        <h7> <strong><em><ins>Photographie Numérique</strong></em></ins> </h7> <br /> <br />
+        <img src="camp-de-photo-cegep-heritage-scaled.jpg" width=350px> <br />
+        <br />
+        <br />
+        <br />
+        </p2>
+        <p3><strong>I. Capture d'images numériques</strong></p3>
+        <br />
+        <br />
+        <br />
+        <p2>
+        Les photosites sont des capteurs composés d'éléments photosensibles (sensibles à la lumière) permettant aux appareils photo de capturer des images. Ils convertissent la lumière reçue en signaux électriques, qui sont ensuite exploités par un convertisseur analogique-numérique, et les informations sont au final sauvegardées souf forme de données numériques.
+        <br />
+        <br />
+        Pour obtenir des images en couleur, les photosites possèdent une matrice de filtres colorés (comme le filtre de Bayer). Celui-ci possède trois couleurs: le rouge, le vert et le bleu, pour mesurer séparément les intensités de nuances de couleurs.
+        <br />
+        <br />
+        <img src="quad-bayer-48mp-android-authority-3.jpg" width=170px>
+        <br />
+        <br />
+        Comme vous pouvez le voir sur l'image ci-dessus, la couleur la plus présente parmi les trois est le vert, en raison de la plus forte sensibilité de l'oeil à ses différentes nuances. <br />
+        <br />
+        <br />
+        <br />
+        </p2>
+        <p3><strong>II. Les images numériques</strong></p3>
+        <br />
+        <br />
+        <p2>
+        <strong>1. Les pixels</strong>
+        <br />
+        <br />
+        Les données des photosites sont enregistrées sous forme de quadrillage. <br /> <br />
+        <img src="Capture d'écran 2025-04-23 192444.png" width=170px"
+        <br />
+        <br />
+        <br />
+        Chaque case, appelée "pixel", est codée selon trois composantes de couleur (rouge, vert et bleu toujours). Pour définir la qualité d'une image, on utilise deux paramètres: <br />
+        -La définition: le nombre total de pixels sur une image; plus ce nombre est élevé, plus la qualité est élevée (1080 pixels sera d'une meilleure qualité que 144 pixels), notée <em>l</em> x <em>h</em> (le nombre de pixels sur la largeur multiplié par le nombre de pixels sur la hauteur) <br />
+        -La résolution: le nombre de pixels par unité de longueur, exprimée en PPP (pixels par pouce). <br />
+        1 pouce=2,54cm.
+        <br />
+        <br />
+        <img src="Difference-Between-480p-720p-1080p-And-4K-Resolutions.jpg" width=250px> <br />
+        <br />
+        <br />
+        <br />
+        <strong>2. Synthèse additive</strong>
+        <br />
+        <br />
+        La synthèse additive est la fusion des couleurs rouge, vert et bleu, qui permet d'obtenir un grand nombre de couleurs. Chaque composante (les couleurs ici) est décrite par 8 bits, donc avec 256 valeurs (de 0 à 255). Chaque couleur est donc représentée par une série de trois nombres de 0 à 255, séparés par des virgules: le premier nombre correspond à la proportion de rouge, le deuxième correspond à celle de vert et le troisième à celle de bleu.
+        <br />
+        <br />
+        <img src="synthese.jpg" width=250px>
+        <img src="Capture d'écran 2025-04-25 001404.png" width=250px>
+        <br />
+        <br />
+        <br />
+        <strong>3. Formats de fichiers</strong
+        <br />
+        <br />
+        Un fichier peut-être utilisé sous de nombreux formats (jpg, png, webp, raw, tiff, etc...), dont certains sont exclusifs à la photographie. Ceux-ci utilisent des algorithmes de compression afin de diminuer le volume de données du fichier sans affecter la qualité de l'image.< br/>
+        <br />
+        Lorsqu'on prend une photo, un certain nombre de données, qui ne décrivent pas des pixels, sont crées. Celles-ci sont appelées "métadonnées EXIF" et apportent des informations détaillées sur l'image (la définition, la résolution, les dimensions, la profondeur de couleur, le lieu et la date de la photo...), mais aussi des informations sur l'appareil ayant pris la photo (la marque, le modèle, etc...)
+        <br />
+        <br />
+        <br />
+        </p2>
+        <p3>III. Le traitement des images</p3>
+        <br />
+        <br />
+        <p2>
+        Un appareil photo est capable d'effectuer certains traitements automatiques après ou lors d'une prise de vue: <br />
+        -La stabilisation mécanique ou numérique, afin de compenser les éventuels mouvements lors d'une photo, et donc éviter que l'image ne soit totalement floue. <br />
+        -La retouche des images après la prise de vue, à des fins artistiques, esthétiques, humoristiques ou totalement mensongères. <br />
+        Donc, avec toutes les avancées technologiques, il est important d'avoir un regard critique sur les images que l'on voit.
+        <br />
+        <br />
+        <br />
+        <br />
+        <h8 id="localisationcartographie"> </h8>
+        <h8> <strong><em><ins>Localisation & Cartographie</strong></em></ins> </h8>
+        <br />
+        <br />
+        <img src="123.jpg" width=350px>
+        <br />
+        <br />
+        <br />
+        </p2>
+        <p3><strong>I. Fonctionnement de la géolocalisation</strong></p3>
+        <br />
+        <br />
+        <br />
+        <p2>
+        <strong>1. Latitude et longitude</strong>
+        <br />
+        <br />
+        La latitude est l'angle formé entre la verticale du lieu étudié et le plan équatorial par rapport au centre de la Terre, exprimée en degrés (de 0° à 90° nord ou sud). <br />
+        La longitude est quant à elle l'angle pointant vers l'est ou l'ouest par rapport au Méridien de Greenwich. Elle est également exprmée en degrés, de 0° à 180° à l'est ou à l'ouest. <br/>
+        <br/>
+        <img src="latitude-geodesique.jpg" width=250px>
+        <br />
+        <br />
+        <br />
+        <strong>2. Les systèmes de géolocalisation</strong>
+        <br />
+        <br />
+        Il existe plusieurs systèmes pour se géolocaliser, tels que le <abrr title="Global Positionning System">GPS</abrr> ou Galileo. Ceux-ci sont constitués d'un grand nombre de satellites qui envoient des signaux vers la Terre à intervalles réguliers (en indiquant l'heure d'émission).
+        <br/>
+        Ces signaux sont ensuite reçus par des récepteurs <abrr title="Global Positionning System">GPS</abrr> placés sur Terre, ce qui leur permet de déterminer leur distance par rapport à ces satellites. <br/>
+        Et en combinant ces informations avec 3 signaux satellites, les récepteurs peuvent déterminer leurs coordonnées géographiques: c'est la <ins>trilatération</ins>.
+        <br/>
+        <br/>
+        <br/>
+        </p2>
+        <p3><strong>II. Les trames <abrr title="National Marine Electronic Associations">NMEA</abrr></strong></p3>
+        <br/>
+        <br/>
+        <br/>
+        <p2>
+            Une trame <abrr title="National Marine Electronic Associations">NMEA</abrr> est une trame permettant d'échanger des données de récepteurs <abrr title="Global Positionning System">GPS</abrr><br/>
+            Elle est constituée d'une série de données séparées par des virgules. Ces données expriment dans l'ordre: <br/>
+            Le type de trame, l'heure d'envoi, la latitude, la longitude, le positionnement, le nombre de satellites, la précision, l'altitude, et d'autres informations complémentaires. <br/>
+            <br/>
+            <img src="R.png" width=600px>
+            <br/>
+            <br/>
+            <br/>
+            </p2>
+        <p3><strong>III. Cartes numériques et <abrr title="Système d'Informations Géographiques">SIG</abrr></strong></p3>
+        <br/>
+        <br/>
+        <br/>
+        <p2>
+            <strong>1. Les logiciels de cartographie</strong>
+            <br/>
+            <br/>
+            Le développement de l'informatique a permis l'évolution des cartes et leur exploitation via les <abrr title="Système d'Informations Géographiques">SIG</abrr>. Vous vous en doutez, l'application de géolocalisation la plus utilisée n'est autre que Google Maps, mais il en existe beaucoup d'autres, telles que <abrr title="Géoportail est une application de cartographie intégrant de nombreuses statistiques publiques grâce à ses multiples couches de données.">Géoportail</abrr> ou <abrr title="OpenStreetMap est une application cartographique mondiale où les internautes peuvent créer, modifier et mettre à jour des données">OpenStreetMap</abrr> <br/>
+            Il existe également certaines application permettant de calculer des itinéraires, comme Uber, Waze, BlaBlaCar et bien sûr Google Maps. Leur fonctionnement repose sur des algoritmes utilisant des paramètres comme le type de route empruntée, le trafic en temps réel, ou le véhicule utilisé. <br/>
+            <br/>
+            <br/>
+            <strong>2. Les graphes (cartographie)</strong>
+            <br/>
+            <br/>
+            Les graphes, tout comme pour les réseaux sociaux, sont des représentations schématiques, mais cette fois-ci pour la cartographie. Ici, les lieux sont représentés par des sommets, et les arêtes sont des voies existantes entre les lieux. <br/>
+            Dessus peuvent figurer des informations comme la durée du trajet ou la distance. Pour calculer des itinéraires, l'une des méthodes les plus connues est l'algorithmede Djikstra, permettant de déterminer le chemin le plus court entre deux sommets.
+            <br/>
+            <br/>
+            <br/>
+            <strong>3. Les enjeux de la géolocalisation</strong>
+            <br/>
+            <br/>
+            Vous l'aurez compris, tous les systèmes du quotidien expliqués jusqu'à présent posaient des contraintes, et celui-ci ne fait pas exception à la règle. <br/>
+            En effet, de plus en plus d'applications se servent des données de géolocalisation afin d'enrichir leur contenu ou de proposer encore des publicités ciblées... Bien sûr, il est possible de paramétrer cet accès en les acceptant ou refusant (ou uniquement lorsque l'application est active), et il est donc important d'avoir conscience des enjeux de confidentialité, de vie privée, etc... et de les utiliser de responsablement afin que ces données ne tombent pas entre les mains de n'importe qui. <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+        <br/>
+        <h9 id="internetweb"> </h9>
+        <h9> <strong><em><ins>Internet & Web</strong></em></ins></h9>
+        <br />
+        <br />
+        <img src="internet.jpg" width=350px>
+        <br />
+        <br />
+        <br />
+        </p2>
+            <p3><strong>I. Navigation sur le web</strong></p3>
+            <p2>
+            <br/>
+            <br/>
+            <br/>
+            Le web représente l'ensemble des ressources reliées les unes aux autres grâce à des <ins><abrr title="Un lien hypertexte est un lien sur lequel on clique pour passer d'une page web à une autre.">liens hypertexte</abrr></ins>. <br/>
+            Pour qu'un appareil puisse y accéder, je ne vous apprends rien (j'espère), il doit être connecté à Internet.
+            <br/>
+            <br/>
+            Sur le web, toutes les ressources sont stockés dans des serveurs distants, auxquels les clients peuvent accéder en leur envoyant des requêtes. Le serveur peut alors lui répondre en lui envoyant des codes de pages web, des images ou des vidéos. <br/>
+            Tous ces échanges sont déterminés et gérés par des <em>protocoles</em>, comme le protocole <code><abrr title="Hypertext Transfer Protocol">http</abrr></code> ou <code><abrr title="Hypertext Transfer Protocol Secure">https</abrr></code>. <br/>
+            <br/>
+            Toutes les ressources présentes sur le web sont localisées par une <abrr title="Uniform Resource Locator">URL</abrr>, une chaîne de caractères indiquant le protocole utilisé, le nom de domaine, et le chemin à suivre pour accéder à la ressource sur le serveur. <br/>
+            <br/>
+            <img src="601c27acee136f00183aa4f5.png" width=500px>
+            <br/>
+            <br/>
+            <br/>
+            </p2>
+        <p3><strong>II. Moteurs de recherche</strong></p3>
+            <p2>
+                <br/>
+                <br/>
+                <br/>
+                Les moteurs de recherche sont des outils spécifiques du web destinés à fournir aux utilisateurs des <abrr title="Uniform Resource Locator">URL</abrr> en fonction de ses recherches. <br/>
+                Pour cela, les moteurs de recherche utilisent des "robots" appelés <em>crawlers</em> ou <em>spiders</em>, qui parcourent les ressources du web afin d'analyser et indexer leurs contenus. <br/>
+                <br/>
+                Bien sûr, nous sommes des humains et nous ne savons pas à l'avance quelle URL précise entrer pour accéder à un site web. Pour résoudre ce problème, il est possible pour un internaute d'entrer des mots-clés dans la barre de recherche. Les moteurs de recherche n'ont plus qu'à regrouper ces mots-clés avec leur base de données à l'aide d'algorithmes pour lui renvoyer une liste d'<abrr title="Uniform Resource Locator">URL</abrr> compatibles avec sa recherche, triés par pertinence (les résultats les plus pertinents sont généralement classés tout en haut de la page). <br/>
+                <br/>
+                <br/>
+                Bien sûr, il existe plusieurs moteurs de recherche, tels que Google Chrome, Bing, Yahoo!, Qwant ou Ecosia, qui diffèrent en fonction de leurs algorithmes, le traitement des requêtes des internautes et les contenus publicitaires mis en avant. <br/>
+                <br/>
+                <img src="Google_Chrome_icon_(September_2014).svg.png" width="50px"> <img src="R (1).png" width=50px> <img src="4918728.jpg" width=50px> <img src="Qwant-v3.png" width=50px> <img src="ecosia-logo-727x545.jpg" width=50px>
+                <br/>
+                <br/>
+                <br/>
+                </p2>
+        <p3><strong>III. Langages d'une page web</strong></p3>
+            <p2>
+            <br/>
+            <br/>
+            <br/>
+            Une page web/site web est une ressource particulière du web: elle accueille du texte, des images, des vidéos, des sons, des animations... Tous ces contenus ont généralement pour but de rendre la navigation sur la page la plus facile et esthétique possible. <br/>
+            Ces pages web sont codées à l'aide de différents langages. <br/>
+            Le langage <abrr title="HyperText Markup Language">html</abrr> permet de créer et structurer le contenu de la page, en utilisant un système de balises. <br/>
+            Si vous souhaitez voir le code de la page, vous pouvez faire un clic droit et sélectionner "Afficher la source de la page" (et c'est là que ça devient compliqué à comprendre &#128513) <br/>
+            <br/>
+            <img src="a screenshot of a html code.webp" width=500px>
+            <br/>
+            <br/>
+            Le langage <abrr title="Cascading Style Sheet">css</abrr> permet de mettre en forme tous ces contenus, utilisé dans des feuilles de style spécifiques, c'est-à-dire des fichiers envoyés par les serveurs en complément du code html pour définir le stylé utilisé (police, couleurs, animations...). <br/>
+            <br/>
+            D'autres langages peuvent également être utilisés pour rendre les pages web plus dynamiques et interactives, afin de les personnaliser, y compris en y ajoutant des cookies. <br/>
+            <br/>
+            <br/>
+            <br/>
+            </p2>
+            <p3><strong>IV. Les droits sur le web</strong></p3>
+            <p2>
+                <br/>
+                <br/>
+                <br/>
+                Le contenu des pages web est soumis aux législations des états. La publication ne demande généralement pas d'autorisation particulière ou de contrôles (en France en tout cas), mais les contenus enfreignant la loi peuvent être signalés. La propriété intellectuelle s'applique également et la réutilisation de certains contenus peut ne pas être autorisée. <br/>
+                Ce sont les auteurs de ces contenus qui définissent les conditions d'utilisation, pouvant par exemple suivre le foctionnement des licences <em>creative commons</em>.
+                <br/>
+                <br/>
+                <img src="les_licences_cc.png" width=500px>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            </p2>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        </p2>
+        <code>ça mérite bien un petit 20/20 ça nan?
+            Vu le temps que j'ai passé dessus...
+        </code>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <h1>Rédaction et programmation par <abrr title="The Master of Masters">Lucas ETIENNE</abrr> <img src="Lord Kyroo.jpg" width=30px></h1>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+    </body>
+</html>
